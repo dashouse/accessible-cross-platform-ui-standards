@@ -1,0 +1,98 @@
+html {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #efd7ff;
+    color: #004014
+}
+
+body {
+    padding: 2rem;
+    max-width: 600px;
+}
+
+
+/* Core typography */
+
+/* @link https://utopia.fyi/type/calculator?c=320,20,1.2,1240,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+    --step--2: clamp(0.8681rem, 0.8361rem + 0.1599vi, 0.96rem);
+    --step--1: clamp(1.0417rem, 0.9866rem + 0.2754vi, 1.2rem);
+    --step-0: clamp(1.25rem, 1.163rem + 0.4348vi, 1.5rem);
+    --step-1: clamp(1.5rem, 1.3696rem + 0.6522vi, 1.875rem);
+    --step-2: clamp(1.8rem, 1.6109rem + 0.9457vi, 2.3438rem);
+    --step-3: clamp(2.16rem, 1.8923rem + 1.3386vi, 2.9297rem);
+    --step-4: clamp(2.592rem, 2.2198rem + 1.8611vi, 3.6621rem);
+    --step-5: clamp(3.1104rem, 2.6001rem + 2.5517vi, 4.5776rem);
+}
+
+h1 {
+    font-size: var(--step-3);
+    margin-top: 0;
+}
+
+h2 {
+    font-size: var(--step-2);
+    /* text-decoration: underline;
+    text-underline-offset: 0.75rem; */
+}
+
+h3 {
+    font-size: var(--step--1);
+}
+
+
+p { 
+    font-size: var(--step-0);
+}
+
+ul {
+    font-size: var(--step-0);
+    padding-left: 1.2rem;
+}
+
+/* Sections */
+
+header {
+    margin-bottom: 4rem;
+}
+
+section {
+    margin: 4rem 0;
+}
+
+hr {
+    border: 4px solid #333;
+    margin: 4rem 0;
+    padding: 0;
+}
+
+/* Lists */
+
+.standards {
+    font-weight: 500;
+    font-size: var(--step-1);
+ 
+}
+
+.standard-details {
+    font-weight: 500;
+    font-size: var(--step-0);
+    list-style: none;
+    padding: 0;
+    margin-bottom: 4rem;
+}
+
+.standards li, .standard-details li {
+    margin-bottom: 1rem;
+}
+
+.rationale-details {
+    font-size: var(--step--1);
+}
+
+.rationale-details li {
+    margin-bottom: 0.5rem;
+}
