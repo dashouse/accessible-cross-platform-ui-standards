@@ -8,7 +8,7 @@ html {
     font-weight: 400;
     font-style: normal;
     background-color: #300127;
-    color: #d5c4dc
+    color: #d5c4dc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,7 +28,8 @@ html {
 
 body {
     padding: 2rem;
-    max-width: 600px;
+    max-width: 768px;
+    margin: 0 auto;
 }
 
 
@@ -48,7 +49,7 @@ body {
 }
 
 h1 {
-    font-size: var(--step-3);
+    font-size: var(--step-4);
     margin-top: 0;
 }
 
@@ -70,6 +71,18 @@ p {
 ul {
     font-size: var(--step-0);
     padding-left: 1.2rem;
+}
+
+a {
+    font-size: var(--step--1);
+    text-underline-offset: 5px;
+    color: currentColor;
+}
+
+a:focus {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+    text-decoration: none;
 }
 
 /* Sections */
