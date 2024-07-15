@@ -9,6 +9,13 @@ html {
     font-style: normal;
     background-color: #300127;
     color: #d5c4dc;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,7 +33,7 @@ html {
 }
 
 
-body {
+main {
     padding: 4rem 2rem;
     max-width: 768px;
     margin: 0 auto;
@@ -55,6 +62,7 @@ h1 {
 
 h2 {
     font-size: var(--step-3);
+
 }
 
 h3 {
@@ -86,7 +94,30 @@ a:focus {
 /* Sections */
 
 header {
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
+    background-color:#300127;
+    color: #d5c4dc;
+    ;
+
+}
+
+@media (prefers-color-scheme: dark) {
+    header {
+        background-color: #21001a;
+        color: #d5c4dc
+    }
+}
+
+header div {
+    padding: 4rem 2rem;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+footer div {
+    padding: 0rem 2rem 2rem;
+    max-width: 768px;
+    margin: 0 auto;
 }
 
 section {
@@ -94,22 +125,13 @@ section {
 }
 
 hr {
-    border: 4px solid #d5c4dc;
-    margin: 4rem 0;
+    border: 2px solid #d5c4dc;
+    margin: 6rem auto;
     padding: 0;
+    max-width: 200px;
+    border-color: currentColor;
 }
 
-@media (prefers-color-scheme: dark) {
-    hr {
-        border: 4px solid #d5c4dc;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    hr {
-        border: 4px solid #300127;
-    }
-}
 
 /* Lists */
 
