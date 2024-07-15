@@ -54,9 +54,7 @@ h1 {
 }
 
 h2 {
-    font-size: var(--step-2);
-    /* text-decoration: underline;
-    text-underline-offset: 0.75rem; */
+    font-size: var(--step-3);
 }
 
 h3 {
@@ -139,4 +137,20 @@ hr {
 
 .rationale-details li {
     margin-bottom: 0.5rem;
+}
+
+/* Containers */
+
+.rationale-box {
+    border: 2px solid currentColor;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.rationale-box h3 {
+    margin-top: 0;
+}
+
+.rationale-box ul {
+    margin-bottom: 0;
 }
