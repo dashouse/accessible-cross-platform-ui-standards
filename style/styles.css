@@ -1,14 +1,37 @@
 :root {
     color-scheme: light dark;
-  }
+}
+
+:root {
+    --foreground: #300127;
+    --background: #d5c4dc;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground: #d5c4dc;
+        --background: #300127;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --foreground: #300127;
+        --background: #d5c4dc;
+    }
+}
+
+
+
+
 
 html {
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-color: #300127;
-    color: #d5c4dc;
+    background-color: var(--background);
+    color: var(--foreground);
     padding: 0;
     margin: 0;
 }
@@ -18,21 +41,6 @@ body {
     margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-    html {
-        background-color: #300127;
-        color: #d5c4dc
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    html {
-        background-color: #d5c4dc;
-        color: #300127
-    }
-}
-
-
 main {
     padding: 4rem 2rem;
     max-width: 768px;
@@ -41,6 +49,7 @@ main {
 
 
 /* Core typography */
+
 
 /* @link https://utopia.fyi/type/calculator?c=320,20,1.2,1240,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
@@ -125,11 +134,10 @@ section {
 }
 
 hr {
-    border: 2px solid #d5c4dc;
+    border: 2px solid var(--foreground);
     margin: 6rem auto;
     padding: 0;
     max-width: 200px;
-    border-color: currentColor;
 }
 
 
