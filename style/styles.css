@@ -22,9 +22,6 @@
 }
 
 
-
-
-
 html {
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
@@ -34,6 +31,7 @@ html {
     color: var(--foreground);
     padding: 0;
     margin: 0;
+    line-height: 1.4;
 }
 
 body {
@@ -96,7 +94,7 @@ a {
 
 a:focus {
     outline: 2px solid currentColor;
-    outline-offset: 4px;
+    outline-offset: 2px;
     text-decoration: none;
 }
 
