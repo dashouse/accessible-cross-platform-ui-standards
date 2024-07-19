@@ -100,6 +100,14 @@ a:focus {
 
 /* Sections */
 
+.status {
+    background-color: var(--background);
+    color: var(--foreground);
+    display: inline-block;
+    padding: 4px 8px;
+    margin-bottom: 1rem;
+}
+
 header {
     margin-bottom: 0rem;
     background-color:#300127;
