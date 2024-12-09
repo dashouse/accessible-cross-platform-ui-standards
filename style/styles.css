@@ -48,6 +48,13 @@ main {
 
 /* Core typography */
 
+header, h1, h2, ol li {
+    text-wrap: balance;
+}
+
+h1, h2 {
+    line-height: 1.3;
+}
 
 /* @link https://utopia.fyi/type/calculator?c=320,20,1.2,1240,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
@@ -176,6 +183,7 @@ hr {
 }
 
 /* Containers */
+
 
 .rationale-box {
     border: 2px solid currentColor;
